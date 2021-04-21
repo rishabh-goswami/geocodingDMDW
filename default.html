@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_2d75f11fec2c43f8b3d5d6bc730d5470 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_2d75f11fec2c43f8b3d5d6bc730d5470" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_2d75f11fec2c43f8b3d5d6bc730d5470 = L.map(
+        'map_2d75f11fec2c43f8b3d5d6bc730d5470', {
+        center: [1.357107, 103.8194992],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_2c512a47bce94288980d0bb4eb67b837 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+    
+        var marker_b2eec931493b471a8e779fb02e407e8f = L.marker(
+            [1.2839667, 103.8534802],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_49f46b2c155941c896560d8da1527ffe = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_09c09bf2df244e04b380659f30b84013 = $(`<div id="html_09c09bf2df244e04b380659f30b84013" style="width: 100.0%; height: 100.0%;">The Fullerton Bay Hotel Singapore, Rating: 9.2, Polarity: 0.6402</div>`)[0];
+                popup_49f46b2c155941c896560d8da1527ffe.setContent(html_09c09bf2df244e04b380659f30b84013);
+            
+
+            marker_b2eec931493b471a8e779fb02e407e8f.bindPopup(popup_49f46b2c155941c896560d8da1527ffe)
+            ;
+
+            
+        
+    
+        var marker_f718a288d52940c890628720b4221b3d = L.marker(
+            [13.72391335, 100.51423368809807],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_0c9d9dc75a2147be9acccfe93a868846 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0c84e6fa7dbf4c5394f471a9b053bbef = $(`<div id="html_0c84e6fa7dbf4c5394f471a9b053bbef" style="width: 100.0%; height: 100.0%;">Mandarin Oriental  Bangkok, Rating: 9.2, Polarity: 0.6472</div>`)[0];
+                popup_0c9d9dc75a2147be9acccfe93a868846.setContent(html_0c84e6fa7dbf4c5394f471a9b053bbef);
+            
+
+            marker_f718a288d52940c890628720b4221b3d.bindPopup(popup_0c9d9dc75a2147be9acccfe93a868846)
+            ;
+
+            
+        
+    
+        var marker_dc2f8b700775428ead2f490f62550776 = L.marker(
+            [13.7231878, 100.51035833104348],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_f8d0c58b01c84993a23cf15ba885859c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dcf45a81dfb94d2eab4a9212d9aaa722 = $(`<div id="html_dcf45a81dfb94d2eab4a9212d9aaa722" style="width: 100.0%; height: 100.0%;">The Peninsula  Bangkok, Rating: 9.1, Polarity: 0.5779</div>`)[0];
+                popup_f8d0c58b01c84993a23cf15ba885859c.setContent(html_dcf45a81dfb94d2eab4a9212d9aaa722);
+            
+
+            marker_dc2f8b700775428ead2f490f62550776.bindPopup(popup_f8d0c58b01c84993a23cf15ba885859c)
+            ;
+
+            
+        
+    
+        var marker_26439e823b504c70b6c178b128dbf860 = L.marker(
+            [22.281233049999997, 114.17201453742393],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_8c8431730ad2429599a5c9d52618322f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8213a98c938240dda1b347394cdb770a = $(`<div id="html_8213a98c938240dda1b347394cdb770a" style="width: 100.0%; height: 100.0%;">Grand Hyatt Hotel Kuala Lumpur, Rating: 9.1, Polarity: 0.6404</div>`)[0];
+                popup_8c8431730ad2429599a5c9d52618322f.setContent(html_8213a98c938240dda1b347394cdb770a);
+            
+
+            marker_26439e823b504c70b6c178b128dbf860.bindPopup(popup_8c8431730ad2429599a5c9d52618322f)
+            ;
+
+            
+        
+    
+        var marker_9078e2934b9e4c5db0ab0ae762927ed6 = L.marker(
+            [1.2905344, 103.8600739],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_71018e6419b941f487e9986a0f2f0f34 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_34297ca9ee30469bb961914a2be0f049 = $(`<div id="html_34297ca9ee30469bb961914a2be0f049" style="width: 100.0%; height: 100.0%;">Ritz Carlton Singapore, Rating: 9.0, Polarity: 0.7033</div>`)[0];
+                popup_71018e6419b941f487e9986a0f2f0f34.setContent(html_34297ca9ee30469bb961914a2be0f049);
+            
+
+            marker_9078e2934b9e4c5db0ab0ae762927ed6.bindPopup(popup_71018e6419b941f487e9986a0f2f0f34)
+            ;
+
+            
+        
+    
+        var marker_69ea95bf25a641f1a374a44a6c9e0ccf = L.marker(
+            [3.1569905, 101.7004782],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_d34476a11be34d1092d6cdda366fa3cb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_22907a083d9f45c3b9faf5365c885d92 = $(`<div id="html_22907a083d9f45c3b9faf5365c885d92" style="width: 100.0%; height: 100.0%;">Hotel Stripes  Kuala Lumpur, Rating: 9.0, Polarity: 0.5909</div>`)[0];
+                popup_d34476a11be34d1092d6cdda366fa3cb.setContent(html_22907a083d9f45c3b9faf5365c885d92);
+            
+
+            marker_69ea95bf25a641f1a374a44a6c9e0ccf.bindPopup(popup_d34476a11be34d1092d6cdda366fa3cb)
+            ;
+
+            
+        
+    
+        var marker_84caae56e8d645b68b9b8a0af374586e = L.marker(
+            [1.29161, 103.8568156522325],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_f119eef9c8f042d8980f3a5da12ebce0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a5e8c6227b6244838c84ed8b89476339 = $(`<div id="html_a5e8c6227b6244838c84ed8b89476339" style="width: 100.0%; height: 100.0%;">PARKROYAL COLLECTION Singapore, Rating: 8.9, Polarity: 0.5667</div>`)[0];
+                popup_f119eef9c8f042d8980f3a5da12ebce0.setContent(html_a5e8c6227b6244838c84ed8b89476339);
+            
+
+            marker_84caae56e8d645b68b9b8a0af374586e.bindPopup(popup_f119eef9c8f042d8980f3a5da12ebce0)
+            ;
+
+            
+        
+    
+        var marker_f4818c1c4be848eeb462e7256806c77c = L.marker(
+            [1.4275479, 103.7800726],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_7f5de940c7af4a3abcc76375e867ae06 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c2f228ac16f5418c97c877d28645f662 = $(`<div id="html_c2f228ac16f5418c97c877d28645f662" style="width: 100.0%; height: 100.0%;">Oakwood  Singapore, Rating: 8.9, Polarity: 0.6955</div>`)[0];
+                popup_7f5de940c7af4a3abcc76375e867ae06.setContent(html_c2f228ac16f5418c97c877d28645f662);
+            
+
+            marker_f4818c1c4be848eeb462e7256806c77c.bindPopup(popup_7f5de940c7af4a3abcc76375e867ae06)
+            ;
+
+            
+        
+    
+        var marker_eb7148bf5c044a3abc15e9b7fb7fedd8 = L.marker(
+            [13.725250899999999, 100.57874409001256],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_d7060a1a134e4b6a8342fc40f57fa632 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c4c68f0721ca435aa560f7102d7d5023 = $(`<div id="html_c4c68f0721ca435aa560f7102d7d5023" style="width: 100.0%; height: 100.0%;">Hotel Nikko  Bangkok, Rating: 8.9, Polarity: 0.5415</div>`)[0];
+                popup_d7060a1a134e4b6a8342fc40f57fa632.setContent(html_c4c68f0721ca435aa560f7102d7d5023);
+            
+
+            marker_eb7148bf5c044a3abc15e9b7fb7fedd8.bindPopup(popup_d7060a1a134e4b6a8342fc40f57fa632)
+            ;
+
+            
+        
+    
+        var marker_41cd5cbec2ec454e8895222e12f9228e = L.marker(
+            [13.7393658, 100.55776928590086],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_81a7bc20c88945b6b9af86882fa787de = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_51b1d6c1116340999335eb2531bd2f7f = $(`<div id="html_51b1d6c1116340999335eb2531bd2f7f" style="width: 100.0%; height: 100.0%;">Sofitel Bangkok, Rating: 8.9, Polarity: 0.6084</div>`)[0];
+                popup_81a7bc20c88945b6b9af86882fa787de.setContent(html_51b1d6c1116340999335eb2531bd2f7f);
+            
+
+            marker_41cd5cbec2ec454e8895222e12f9228e.bindPopup(popup_81a7bc20c88945b6b9af86882fa787de)
+            ;
+
+            
+        
+    
+        var marker_25eb8c216f104baba12dfe16d7665c2e = L.marker(
+            [1.2496982, 103.8244312],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_eb3e8ae85bfb4ae8b4917a878e55f065 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3c694787abac4b4e851bffec887a4e4d = $(`<div id="html_3c694787abac4b4e851bffec887a4e4d" style="width: 100.0%; height: 100.0%;">Capella Singapore, Rating: 8.9, Polarity: 0.6902</div>`)[0];
+                popup_eb3e8ae85bfb4ae8b4917a878e55f065.setContent(html_3c694787abac4b4e851bffec887a4e4d);
+            
+
+            marker_25eb8c216f104baba12dfe16d7665c2e.bindPopup(popup_eb3e8ae85bfb4ae8b4917a878e55f065)
+            ;
+
+            
+        
+    
+        var marker_86ed32727cb3430abccd8b853787cfe9 = L.marker(
+            [1.28620185, 103.85307262998235],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_7686802cf2f4445abda5f7df0fdc3b97 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_64fe853dcab24f549013d20299ac2f0c = $(`<div id="html_64fe853dcab24f549013d20299ac2f0c" style="width: 100.0%; height: 100.0%;">The Fullerton Hotel Singapore, Rating: 8.9, Polarity: 0.6330</div>`)[0];
+                popup_7686802cf2f4445abda5f7df0fdc3b97.setContent(html_64fe853dcab24f549013d20299ac2f0c);
+            
+
+            marker_86ed32727cb3430abccd8b853787cfe9.bindPopup(popup_7686802cf2f4445abda5f7df0fdc3b97)
+            ;
+
+            
+        
+    
+        var marker_b81c9b68e4674a7d9cb48d8380d6ac0c = L.marker(
+            [3.1538509, 101.71479155113391],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_e8c4ab194a0a43a2bbe88e73892bab4a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_061815558b8d476890176295fda2808e = $(`<div id="html_061815558b8d476890176295fda2808e" style="width: 100.0%; height: 100.0%;">Traders Hotel  Kuala Lumpur, Rating: 8.9, Polarity: 0.6650</div>`)[0];
+                popup_e8c4ab194a0a43a2bbe88e73892bab4a.setContent(html_061815558b8d476890176295fda2808e);
+            
+
+            marker_b81c9b68e4674a7d9cb48d8380d6ac0c.bindPopup(popup_e8c4ab194a0a43a2bbe88e73892bab4a)
+            ;
+
+            
+        
+    
+        var marker_f935630f80d04bed9cb047d6c304667f = L.marker(
+            [3.1352656, 101.6857595],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_19bd2e908a9842d6b25bb35b8de8469c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a7024a3f983a4e25af28664ac3e241d3 = $(`<div id="html_a7024a3f983a4e25af28664ac3e241d3" style="width: 100.0%; height: 100.0%;">Hilton  Kuala Lumpur, Rating: 8.9, Polarity: 0.5651</div>`)[0];
+                popup_19bd2e908a9842d6b25bb35b8de8469c.setContent(html_a7024a3f983a4e25af28664ac3e241d3);
+            
+
+            marker_f935630f80d04bed9cb047d6c304667f.bindPopup(popup_19bd2e908a9842d6b25bb35b8de8469c)
+            ;
+
+            
+        
+    
+        var marker_f09ac9717ab44ad2bb12443a4f0aa62b = L.marker(
+            [1.3200301, 103.8447824],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_4fa069e0f51246059f5620fd2762bc3f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_513e7232b4b34495b69ff8579d43fcec = $(`<div id="html_513e7232b4b34495b69ff8579d43fcec" style="width: 100.0%; height: 100.0%;">Oasia Hotel Singapore, Rating: 8.8, Polarity: 0.5894</div>`)[0];
+                popup_4fa069e0f51246059f5620fd2762bc3f.setContent(html_513e7232b4b34495b69ff8579d43fcec);
+            
+
+            marker_f09ac9717ab44ad2bb12443a4f0aa62b.bindPopup(popup_4fa069e0f51246059f5620fd2762bc3f)
+            ;
+
+            
+        
+    
+        var marker_93ac63c0eb2849f1ac6c3d8cc7df811a = L.marker(
+            [1.2783073, 103.8507952],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_e0181b7f251047b3aeae35a815621c70 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_77fac0ab147b46a89e86557e78e835f9 = $(`<div id="html_77fac0ab147b46a89e86557e78e835f9" style="width: 100.0%; height: 100.0%;">The Westin  Singapore, Rating: 8.8, Polarity: 0.6115</div>`)[0];
+                popup_e0181b7f251047b3aeae35a815621c70.setContent(html_77fac0ab147b46a89e86557e78e835f9);
+            
+
+            marker_93ac63c0eb2849f1ac6c3d8cc7df811a.bindPopup(popup_e0181b7f251047b3aeae35a815621c70)
+            ;
+
+            
+        
+    
+        var marker_ccca8a83886b46f496234cc476d00947 = L.marker(
+            [1.2983823, 103.85489228120593],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_94ef77a640c24b95891bb9b0b8e1e13c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8075d4c0cb5a44d9a28a0070e83eaa22 = $(`<div id="html_8075d4c0cb5a44d9a28a0070e83eaa22" style="width: 100.0%; height: 100.0%;">InterContinental  Singapore, Rating: 8.8, Polarity: 0.5940</div>`)[0];
+                popup_94ef77a640c24b95891bb9b0b8e1e13c.setContent(html_8075d4c0cb5a44d9a28a0070e83eaa22);
+            
+
+            marker_ccca8a83886b46f496234cc476d00947.bindPopup(popup_94ef77a640c24b95891bb9b0b8e1e13c)
+            ;
+
+            
+        
+    
+        var marker_c8b2670a8ade4230a0f892433843e03f = L.marker(
+            [13.702285799999999, 100.53731474317583],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_6b2d70c086cb4cfaa25b29e41f690e58 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e2a7d3af780d411d8a39b614c4161b43 = $(`<div id="html_e2a7d3af780d411d8a39b614c4161b43" style="width: 100.0%; height: 100.0%;">Chatrium Hotel Bangkok, Rating: 8.8, Polarity: 0.6754</div>`)[0];
+                popup_6b2d70c086cb4cfaa25b29e41f690e58.setContent(html_e2a7d3af780d411d8a39b614c4161b43);
+            
+
+            marker_c8b2670a8ade4230a0f892433843e03f.bindPopup(popup_6b2d70c086cb4cfaa25b29e41f690e58)
+            ;
+
+            
+        
+    
+        var marker_9ecd2984a2244caf945282e95dfc893c = L.marker(
+            [13.740485549999999, 100.54108644205485],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_8d3ce2521516469bbbb16a81f3c7cb70 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_02431f1235f5497482ea20e788bb9853 = $(`<div id="html_02431f1235f5497482ea20e788bb9853" style="width: 100.0%; height: 100.0%;">Hansar Hotel Bangkok, Rating: 8.8, Polarity: 0.5916</div>`)[0];
+                popup_8d3ce2521516469bbbb16a81f3c7cb70.setContent(html_02431f1235f5497482ea20e788bb9853);
+            
+
+            marker_9ecd2984a2244caf945282e95dfc893c.bindPopup(popup_8d3ce2521516469bbbb16a81f3c7cb70)
+            ;
+
+            
+        
+    
+        var marker_c435e00da0a048f6bab3517b15a04c08 = L.marker(
+            [4.2262673, 103.4280309],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_ffedf56c615b416da672f78d75dce1d6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f6a1b8a52ec14546876a25b901fded2e = $(`<div id="html_f6a1b8a52ec14546876a25b901fded2e" style="width: 100.0%; height: 100.0%;">SKYVIEW Hotel Bangkok, Rating: 8.7, Polarity: 0.5326</div>`)[0];
+                popup_ffedf56c615b416da672f78d75dce1d6.setContent(html_f6a1b8a52ec14546876a25b901fded2e);
+            
+
+            marker_c435e00da0a048f6bab3517b15a04c08.bindPopup(popup_ffedf56c615b416da672f78d75dce1d6)
+            ;
+
+            
+        
+    
+        var marker_34d948ff9d6e45afa80ee7621d536be5 = L.marker(
+            [13.7218471, 100.5170661],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_32db54d592a840aea53a5712b7f23a32 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_22782f519e5d4878956dd65c9cec526c = $(`<div id="html_22782f519e5d4878956dd65c9cec526c" style="width: 100.0%; height: 100.0%;">lebua Bangkok, Rating: 8.7, Polarity: 0.5505</div>`)[0];
+                popup_32db54d592a840aea53a5712b7f23a32.setContent(html_22782f519e5d4878956dd65c9cec526c);
+            
+
+            marker_34d948ff9d6e45afa80ee7621d536be5.bindPopup(popup_32db54d592a840aea53a5712b7f23a32)
+            ;
+
+            
+        
+    
+        var marker_4606bcac3f4144e99e848479e664d785 = L.marker(
+            [1.3586803, 103.9879472],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_9d8a1a258cf6439fa1dc9dbbb59b5434 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_005a87de31244421b504368520ccd4d2 = $(`<div id="html_005a87de31244421b504368520ccd4d2" style="width: 100.0%; height: 100.0%;">Crowne Plaza Changi Airport Singapore, Rating: 8.7, Polarity: 0.6455</div>`)[0];
+                popup_9d8a1a258cf6439fa1dc9dbbb59b5434.setContent(html_005a87de31244421b504368520ccd4d2);
+            
+
+            marker_4606bcac3f4144e99e848479e664d785.bindPopup(popup_9d8a1a258cf6439fa1dc9dbbb59b5434)
+            ;
+
+            
+        
+    
+        var marker_ebdaa4dca1e241df96e68a853aa36125 = L.marker(
+            [3.12736145, 101.72401892479988],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_4dff3bd9cd7e4af88363ec933858cc6f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4efa076819a540429acdeaebe4fa59e5 = $(`<div id="html_4efa076819a540429acdeaebe4fa59e5" style="width: 100.0%; height: 100.0%;">Sunway Velocity Hotel Kuala Lumpur, Rating: 8.6, Polarity: 0.4240</div>`)[0];
+                popup_4dff3bd9cd7e4af88363ec933858cc6f.setContent(html_4efa076819a540429acdeaebe4fa59e5);
+            
+
+            marker_ebdaa4dca1e241df96e68a853aa36125.bindPopup(popup_4dff3bd9cd7e4af88363ec933858cc6f)
+            ;
+
+            
+        
+    
+        var marker_80afadce44334d05a12b33913709c510 = L.marker(
+            [13.7276146, 100.5247347],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_8559c31fc1ef4d0f88d64b1fc5c5bcf1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1f9529e7bbd34063b4a7f4f796e9d700 = $(`<div id="html_1f9529e7bbd34063b4a7f4f796e9d700" style="width: 100.0%; height: 100.0%;">Kokotel Bangkok, Rating: 8.6, Polarity: 0.5485</div>`)[0];
+                popup_8559c31fc1ef4d0f88d64b1fc5c5bcf1.setContent(html_1f9529e7bbd34063b4a7f4f796e9d700);
+            
+
+            marker_80afadce44334d05a12b33913709c510.bindPopup(popup_8559c31fc1ef4d0f88d64b1fc5c5bcf1)
+            ;
+
+            
+        
+    
+        var marker_dc2fe585649c441da0884807321a6f7c = L.marker(
+            [3.1440185, 101.70441470241059],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_33f78f2f407848e7a19e7cd00de4e547 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_804524f1bd0e4fc1a51689815ceec674 = $(`<div id="html_804524f1bd0e4fc1a51689815ceec674" style="width: 100.0%; height: 100.0%;">The Robertson Kuala Lumpur, Rating: 8.6, Polarity: 0.4696</div>`)[0];
+                popup_33f78f2f407848e7a19e7cd00de4e547.setContent(html_804524f1bd0e4fc1a51689815ceec674);
+            
+
+            marker_dc2fe585649c441da0884807321a6f7c.bindPopup(popup_33f78f2f407848e7a19e7cd00de4e547)
+            ;
+
+            
+        
+    
+        var marker_9ad6adeab1754cbea08ddeff07615e68 = L.marker(
+            [3.1665965, 101.6927549],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_ca1867ba34784e578fc1e54d6f00e3fa = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_072582e337254fdcb74d19a7a54c9348 = $(`<div id="html_072582e337254fdcb74d19a7a54c9348" style="width: 100.0%; height: 100.0%;">Sunway Putra Hotel Kuala Lumpur, Rating: 8.5, Polarity: 0.5157</div>`)[0];
+                popup_ca1867ba34784e578fc1e54d6f00e3fa.setContent(html_072582e337254fdcb74d19a7a54c9348);
+            
+
+            marker_9ad6adeab1754cbea08ddeff07615e68.bindPopup(popup_ca1867ba34784e578fc1e54d6f00e3fa)
+            ;
+
+            
+        
+    
+        var marker_c383b9d6fcf84aa185258fb671b874db = L.marker(
+            [3.1617227, 101.719828],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_fb77f3d78c334784949212aa5e6d98a4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6967f7929f394a2690be551dcba30d26 = $(`<div id="html_6967f7929f394a2690be551dcba30d26" style="width: 100.0%; height: 100.0%;">DoubleTree by Hilton Hotel  Kuala Lumpur, Rating: 8.5, Polarity: 0.4904</div>`)[0];
+                popup_fb77f3d78c334784949212aa5e6d98a4.setContent(html_6967f7929f394a2690be551dcba30d26);
+            
+
+            marker_c383b9d6fcf84aa185258fb671b874db.bindPopup(popup_fb77f3d78c334784949212aa5e6d98a4)
+            ;
+
+            
+        
+    
+        var marker_0eadfd36653147b59f6cdb36c6db798f = L.marker(
+            [3.1639759, 101.69841971290585],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+        
+    
+            var popup_677968d8a95948feb565f54e3d2f17a3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7c4474e5f55846f2a067eb8d7fa0b801 = $(`<div id="html_7c4474e5f55846f2a067eb8d7fa0b801" style="width: 100.0%; height: 100.0%;">Hilton Garden Inn  Kuala Lumpur, Rating: 8.3, Polarity: 0.3253</div>`)[0];
+                popup_677968d8a95948feb565f54e3d2f17a3.setContent(html_7c4474e5f55846f2a067eb8d7fa0b801);
+            
+
+            marker_0eadfd36653147b59f6cdb36c6db798f.bindPopup(popup_677968d8a95948feb565f54e3d2f17a3)
+            ;
+
+            
+        
+    
+            var circle_marker_c2a724a4938c4d72aeae69237379552a = L.circleMarker(
+                [1.2905344, 103.8600739],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_c3b9f96a1f184a38963826be3d7f51ae = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c8504eee09324221b420a98767578d4a = $(`<div id="html_c8504eee09324221b420a98767578d4a" style="width: 100.0%; height: 100.0%;">Ritz Carlton Singapore, Rating: 9.0, Polarity: 0.7033</div>`)[0];
+                popup_c3b9f96a1f184a38963826be3d7f51ae.setContent(html_c8504eee09324221b420a98767578d4a);
+            
+
+            circle_marker_c2a724a4938c4d72aeae69237379552a.bindPopup(popup_c3b9f96a1f184a38963826be3d7f51ae)
+            ;
+
+            
+        
+    
+            var circle_marker_f3bfa85c8a0a4a6ca3c03e55005a52a9 = L.circleMarker(
+                [1.4275479, 103.7800726],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_4f1cef36f22c40ecb1230323e1366d16 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0fdeda21af544a0ba420e3a72f099821 = $(`<div id="html_0fdeda21af544a0ba420e3a72f099821" style="width: 100.0%; height: 100.0%;">Oakwood  Singapore, Rating: 8.9, Polarity: 0.6955</div>`)[0];
+                popup_4f1cef36f22c40ecb1230323e1366d16.setContent(html_0fdeda21af544a0ba420e3a72f099821);
+            
+
+            circle_marker_f3bfa85c8a0a4a6ca3c03e55005a52a9.bindPopup(popup_4f1cef36f22c40ecb1230323e1366d16)
+            ;
+
+            
+        
+    
+            var circle_marker_a72d6b8e933e45c59670e6ed35b081ed = L.circleMarker(
+                [1.2496982, 103.8244312],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_38cc99e85595410ca1fe3012a19b09e1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_165bba633e334c3dad97680d5c918916 = $(`<div id="html_165bba633e334c3dad97680d5c918916" style="width: 100.0%; height: 100.0%;">Capella Singapore, Rating: 8.9, Polarity: 0.6902</div>`)[0];
+                popup_38cc99e85595410ca1fe3012a19b09e1.setContent(html_165bba633e334c3dad97680d5c918916);
+            
+
+            circle_marker_a72d6b8e933e45c59670e6ed35b081ed.bindPopup(popup_38cc99e85595410ca1fe3012a19b09e1)
+            ;
+
+            
+        
+    
+            var circle_marker_483accea0c67401b9340aea03ace1046 = L.circleMarker(
+                [1.2958127, 103.8453621],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_80265158b904437c92a670afb6b55af2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2825ccba8848424089bbe79b6c6e91f0 = $(`<div id="html_2825ccba8848424089bbe79b6c6e91f0" style="width: 100.0%; height: 100.0%;">Hotel Fort Canning Singapore, Rating: 8.6, Polarity: 0.6862</div>`)[0];
+                popup_80265158b904437c92a670afb6b55af2.setContent(html_2825ccba8848424089bbe79b6c6e91f0);
+            
+
+            circle_marker_483accea0c67401b9340aea03ace1046.bindPopup(popup_80265158b904437c92a670afb6b55af2)
+            ;
+
+            
+        
+    
+            var circle_marker_d53efece69684ab8ae6e7f4eba203433 = L.circleMarker(
+                [13.702285799999999, 100.53731474317583],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_09499cea192146bdbf3cdc77af4b3ca6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_12b2edceb0fe45c5b4cabaffcc4d67f9 = $(`<div id="html_12b2edceb0fe45c5b4cabaffcc4d67f9" style="width: 100.0%; height: 100.0%;">Chatrium Hotel Bangkok, Rating: 8.8, Polarity: 0.6754</div>`)[0];
+                popup_09499cea192146bdbf3cdc77af4b3ca6.setContent(html_12b2edceb0fe45c5b4cabaffcc4d67f9);
+            
+
+            circle_marker_d53efece69684ab8ae6e7f4eba203433.bindPopup(popup_09499cea192146bdbf3cdc77af4b3ca6)
+            ;
+
+            
+        
+    
+            var circle_marker_25a51f1e7d084a188e90cf4469b99bb2 = L.circleMarker(
+                [33.8794907, -117.9687334],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_e99ec4dce3eb4a76b07e11ee2ac150c5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f00167d0f46e4fd1be2a5e52738406c2 = $(`<div id="html_f00167d0f46e4fd1be2a5e52738406c2" style="width: 100.0%; height: 100.0%;">Ramada Plaza  Bangkok, Rating: 8.2, Polarity: 0.6740</div>`)[0];
+                popup_e99ec4dce3eb4a76b07e11ee2ac150c5.setContent(html_f00167d0f46e4fd1be2a5e52738406c2);
+            
+
+            circle_marker_25a51f1e7d084a188e90cf4469b99bb2.bindPopup(popup_e99ec4dce3eb4a76b07e11ee2ac150c5)
+            ;
+
+            
+        
+    
+            var circle_marker_ff97846c97d64f589d1ef1d1e1ddce97 = L.circleMarker(
+                [3.1538509, 101.71479155113391],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_3096dfd3188f41079e3c823030355892 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6353430c450f478e83105dae15d44fcc = $(`<div id="html_6353430c450f478e83105dae15d44fcc" style="width: 100.0%; height: 100.0%;">Traders Hotel  Kuala Lumpur, Rating: 8.9, Polarity: 0.6650</div>`)[0];
+                popup_3096dfd3188f41079e3c823030355892.setContent(html_6353430c450f478e83105dae15d44fcc);
+            
+
+            circle_marker_ff97846c97d64f589d1ef1d1e1ddce97.bindPopup(popup_3096dfd3188f41079e3c823030355892)
+            ;
+
+            
+        
+    
+            var circle_marker_5ab8521eb0674f0f819b14cdf9436cce = L.circleMarker(
+                [13.72391335, 100.51423368809807],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_d27dd557a7bd46b1bad6c9957d55e428 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f3235056897643e6a3d917bdc6e258aa = $(`<div id="html_f3235056897643e6a3d917bdc6e258aa" style="width: 100.0%; height: 100.0%;">Mandarin Oriental  Bangkok, Rating: 9.2, Polarity: 0.6472</div>`)[0];
+                popup_d27dd557a7bd46b1bad6c9957d55e428.setContent(html_f3235056897643e6a3d917bdc6e258aa);
+            
+
+            circle_marker_5ab8521eb0674f0f819b14cdf9436cce.bindPopup(popup_d27dd557a7bd46b1bad6c9957d55e428)
+            ;
+
+            
+        
+    
+            var circle_marker_c761488e635d4fec8db75da0d6000365 = L.circleMarker(
+                [1.3586803, 103.9879472],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_bc7d7ee3549e4f1e875b760426b82b7c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6408c72eec194122ab25d28a8850d763 = $(`<div id="html_6408c72eec194122ab25d28a8850d763" style="width: 100.0%; height: 100.0%;">Crowne Plaza Changi Airport Singapore, Rating: 8.7, Polarity: 0.6455</div>`)[0];
+                popup_bc7d7ee3549e4f1e875b760426b82b7c.setContent(html_6408c72eec194122ab25d28a8850d763);
+            
+
+            circle_marker_c761488e635d4fec8db75da0d6000365.bindPopup(popup_bc7d7ee3549e4f1e875b760426b82b7c)
+            ;
+
+            
+        
+    
+            var circle_marker_f4baad0ea4334bf3b2014269ad9271c3 = L.circleMarker(
+                [22.281233049999997, 114.17201453742393],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_95fb6a140f624635abedeef2402adb64 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5e7f741db1d34e188b37574529a9d51a = $(`<div id="html_5e7f741db1d34e188b37574529a9d51a" style="width: 100.0%; height: 100.0%;">Grand Hyatt Hotel Kuala Lumpur, Rating: 9.1, Polarity: 0.6404</div>`)[0];
+                popup_95fb6a140f624635abedeef2402adb64.setContent(html_5e7f741db1d34e188b37574529a9d51a);
+            
+
+            circle_marker_f4baad0ea4334bf3b2014269ad9271c3.bindPopup(popup_95fb6a140f624635abedeef2402adb64)
+            ;
+
+            
+        
+    
+            var circle_marker_c16bbace16f4465c984f018a3e547454 = L.circleMarker(
+                [1.2839667, 103.8534802],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_f6e0fcc2986d41dfa0e80530e8ad6776 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3bdf7f54fb03458c9d2696992f2ca56d = $(`<div id="html_3bdf7f54fb03458c9d2696992f2ca56d" style="width: 100.0%; height: 100.0%;">The Fullerton Bay Hotel Singapore, Rating: 9.2, Polarity: 0.6402</div>`)[0];
+                popup_f6e0fcc2986d41dfa0e80530e8ad6776.setContent(html_3bdf7f54fb03458c9d2696992f2ca56d);
+            
+
+            circle_marker_c16bbace16f4465c984f018a3e547454.bindPopup(popup_f6e0fcc2986d41dfa0e80530e8ad6776)
+            ;
+
+            
+        
+    
+            var circle_marker_d078523888564674b5fbc6897f06b699 = L.circleMarker(
+                [1.247299, 103.84292771364326],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_61b8477f05394f3bb2da5474d0f6f66f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_365f46d05b09492eb4f8c0cc4f33152b = $(`<div id="html_365f46d05b09492eb4f8c0cc4f33152b" style="width: 100.0%; height: 100.0%;">W Sentosa Cove Singapore, Rating: 8.6, Polarity: 0.6339</div>`)[0];
+                popup_61b8477f05394f3bb2da5474d0f6f66f.setContent(html_365f46d05b09492eb4f8c0cc4f33152b);
+            
+
+            circle_marker_d078523888564674b5fbc6897f06b699.bindPopup(popup_61b8477f05394f3bb2da5474d0f6f66f)
+            ;
+
+            
+        
+    
+            var circle_marker_c6fc81bf2d6e44558ae2e86fc0232cc2 = L.circleMarker(
+                [1.28620185, 103.85307262998235],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_c45c455663e644958a9a8f6ee9379ce8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_173cfcf804334d4fb0f3314d2e3a5b81 = $(`<div id="html_173cfcf804334d4fb0f3314d2e3a5b81" style="width: 100.0%; height: 100.0%;">The Fullerton Hotel Singapore, Rating: 8.9, Polarity: 0.6330</div>`)[0];
+                popup_c45c455663e644958a9a8f6ee9379ce8.setContent(html_173cfcf804334d4fb0f3314d2e3a5b81);
+            
+
+            circle_marker_c6fc81bf2d6e44558ae2e86fc0232cc2.bindPopup(popup_c45c455663e644958a9a8f6ee9379ce8)
+            ;
+
+            
+        
+    
+            var circle_marker_06b122734a4e4bb7b1d36010a2283e98 = L.circleMarker(
+                [13.708181750000001, 100.59425846267173],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_622dae05798e4a7d8509d53aff07cf09 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_24be5524640e4e1789fd65dc2ee6355d = $(`<div id="html_24be5524640e4e1789fd65dc2ee6355d" style="width: 100.0%; height: 100.0%;">The Bless Hotel  Bangkok, Rating: 8.2, Polarity: 0.6274</div>`)[0];
+                popup_622dae05798e4a7d8509d53aff07cf09.setContent(html_24be5524640e4e1789fd65dc2ee6355d);
+            
+
+            circle_marker_06b122734a4e4bb7b1d36010a2283e98.bindPopup(popup_622dae05798e4a7d8509d53aff07cf09)
+            ;
+
+            
+        
+    
+            var circle_marker_5b3cdcfb20234fe890cfb6e9fd328384 = L.circleMarker(
+                [1.2783073, 103.8507952],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_d5565fa7fb5a4b4ba42650c195f259d3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ce6e1e92330b4ad1a01b08d45340576e = $(`<div id="html_ce6e1e92330b4ad1a01b08d45340576e" style="width: 100.0%; height: 100.0%;">The Westin  Singapore, Rating: 8.8, Polarity: 0.6115</div>`)[0];
+                popup_d5565fa7fb5a4b4ba42650c195f259d3.setContent(html_ce6e1e92330b4ad1a01b08d45340576e);
+            
+
+            circle_marker_5b3cdcfb20234fe890cfb6e9fd328384.bindPopup(popup_d5565fa7fb5a4b4ba42650c195f259d3)
+            ;
+
+            
+        
+    
+            var circle_marker_d5ef3bd8f19b40a7b4c5eed905865c08 = L.circleMarker(
+                [13.7393658, 100.55776928590086],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_4f762911dae44ac2a0c101583eab66c9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_31b43579ea3141d2986368c41007e597 = $(`<div id="html_31b43579ea3141d2986368c41007e597" style="width: 100.0%; height: 100.0%;">Sofitel Bangkok, Rating: 8.9, Polarity: 0.6084</div>`)[0];
+                popup_4f762911dae44ac2a0c101583eab66c9.setContent(html_31b43579ea3141d2986368c41007e597);
+            
+
+            circle_marker_d5ef3bd8f19b40a7b4c5eed905865c08.bindPopup(popup_4f762911dae44ac2a0c101583eab66c9)
+            ;
+
+            
+        
+    
+            var circle_marker_5f225c8e34bc4c559be01f60b170f50f = L.circleMarker(
+                [1.2574021499999999, 103.80979379937477],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_ac69ee14538a47db8aa25c3ce596e97c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_90709b8b12f8474eb1dd64047f3f7bfe = $(`<div id="html_90709b8b12f8474eb1dd64047f3f7bfe" style="width: 100.0%; height: 100.0%;">Shangri-Las Rasa Sentosa Singapore, Rating: 8.5, Polarity: 0.6049</div>`)[0];
+                popup_ac69ee14538a47db8aa25c3ce596e97c.setContent(html_90709b8b12f8474eb1dd64047f3f7bfe);
+            
+
+            circle_marker_5f225c8e34bc4c559be01f60b170f50f.bindPopup(popup_ac69ee14538a47db8aa25c3ce596e97c)
+            ;
+
+            
+        
+    
+            var circle_marker_5a0a25a8beae412ab5dccda0ab42b67f = L.circleMarker(
+                [13.740485549999999, 100.54108644205485],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_983495095ed64b52bc0842cc7bf2b311 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_07b8e7a25fd54558ad1fa6a49e8718cf = $(`<div id="html_07b8e7a25fd54558ad1fa6a49e8718cf" style="width: 100.0%; height: 100.0%;">Hansar Hotel Bangkok, Rating: 8.8, Polarity: 0.5916</div>`)[0];
+                popup_983495095ed64b52bc0842cc7bf2b311.setContent(html_07b8e7a25fd54558ad1fa6a49e8718cf);
+            
+
+            circle_marker_5a0a25a8beae412ab5dccda0ab42b67f.bindPopup(popup_983495095ed64b52bc0842cc7bf2b311)
+            ;
+
+            
+        
+    
+            var circle_marker_7cd34652f1614b6c9fa8caa87894cae2 = L.circleMarker(
+                [3.1569905, 101.7004782],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_910ef6fc1469457da01d7e1bc4688d14 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4c9e5897cf474f6e9a77cbe631fbbe94 = $(`<div id="html_4c9e5897cf474f6e9a77cbe631fbbe94" style="width: 100.0%; height: 100.0%;">Hotel Stripes  Kuala Lumpur, Rating: 9.0, Polarity: 0.5909</div>`)[0];
+                popup_910ef6fc1469457da01d7e1bc4688d14.setContent(html_4c9e5897cf474f6e9a77cbe631fbbe94);
+            
+
+            circle_marker_7cd34652f1614b6c9fa8caa87894cae2.bindPopup(popup_910ef6fc1469457da01d7e1bc4688d14)
+            ;
+
+            
+        
+    
+            var circle_marker_a523af81972c40c7b5927008bb10653b = L.circleMarker(
+                [13.7231878, 100.51035833104348],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_117ddf497315473cbe07f1fe7986592e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dff6dff867d141fea1160297e67298ed = $(`<div id="html_dff6dff867d141fea1160297e67298ed" style="width: 100.0%; height: 100.0%;">The Peninsula  Bangkok, Rating: 9.1, Polarity: 0.5779</div>`)[0];
+                popup_117ddf497315473cbe07f1fe7986592e.setContent(html_dff6dff867d141fea1160297e67298ed);
+            
+
+            circle_marker_a523af81972c40c7b5927008bb10653b.bindPopup(popup_117ddf497315473cbe07f1fe7986592e)
+            ;
+
+            
+        
+    
+            var circle_marker_f63350ca90054717b7ca173dd8df8d65 = L.circleMarker(
+                [13.7453115, 100.4908586],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_e05f7b3d3aa14706a0db75c072372f31 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a0cd33f858c34921903528429a74a9e5 = $(`<div id="html_a0cd33f858c34921903528429a74a9e5" style="width: 100.0%; height: 100.0%;">sala rattanakosin  Bangkok, Rating: 8.1, Polarity: 0.5764</div>`)[0];
+                popup_e05f7b3d3aa14706a0db75c072372f31.setContent(html_a0cd33f858c34921903528429a74a9e5);
+            
+
+            circle_marker_f63350ca90054717b7ca173dd8df8d65.bindPopup(popup_e05f7b3d3aa14706a0db75c072372f31)
+            ;
+
+            
+        
+    
+            var circle_marker_822fd0864f3349aea203b27c31bbe496 = L.circleMarker(
+                [3.1352656, 101.6857595],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_18dc15283ea74922ba8219f8d9df3567 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_76ccddf013704ce09c14d267c8434ebf = $(`<div id="html_76ccddf013704ce09c14d267c8434ebf" style="width: 100.0%; height: 100.0%;">Hilton  Kuala Lumpur, Rating: 8.9, Polarity: 0.5651</div>`)[0];
+                popup_18dc15283ea74922ba8219f8d9df3567.setContent(html_76ccddf013704ce09c14d267c8434ebf);
+            
+
+            circle_marker_822fd0864f3349aea203b27c31bbe496.bindPopup(popup_18dc15283ea74922ba8219f8d9df3567)
+            ;
+
+            
+        
+    
+            var circle_marker_bc05280edde44c14aff233358c3b28d3 = L.circleMarker(
+                [13.7218471, 100.5170661],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_57129ca875314f968cfe4e5ace814275 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_117f39df94084896b12da7146df8a5b4 = $(`<div id="html_117f39df94084896b12da7146df8a5b4" style="width: 100.0%; height: 100.0%;">lebua Bangkok, Rating: 8.7, Polarity: 0.5505</div>`)[0];
+                popup_57129ca875314f968cfe4e5ace814275.setContent(html_117f39df94084896b12da7146df8a5b4);
+            
+
+            circle_marker_bc05280edde44c14aff233358c3b28d3.bindPopup(popup_57129ca875314f968cfe4e5ace814275)
+            ;
+
+            
+        
+    
+            var circle_marker_e249db90babf465faa7a7a0eb1cc1470 = L.circleMarker(
+                [13.77639435, 100.57421112540065],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_2061d51aa3274bbfab910a4234f679b0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9573d52bc2a544ca9c57e1d58ae8d1f5 = $(`<div id="html_9573d52bc2a544ca9c57e1d58ae8d1f5" style="width: 100.0%; height: 100.0%;">Swissotel  Bangkok, Rating: 8.4, Polarity: 0.5502</div>`)[0];
+                popup_2061d51aa3274bbfab910a4234f679b0.setContent(html_9573d52bc2a544ca9c57e1d58ae8d1f5);
+            
+
+            circle_marker_e249db90babf465faa7a7a0eb1cc1470.bindPopup(popup_2061d51aa3274bbfab910a4234f679b0)
+            ;
+
+            
+        
+    
+            var circle_marker_6374f91109aa4ef796dd75054f3df079 = L.circleMarker(
+                [3.1665965, 101.6927549],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_7980a6a7000c44d587b1f6544f1c1254 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_384646e79c704729b13e204fecc5dfc4 = $(`<div id="html_384646e79c704729b13e204fecc5dfc4" style="width: 100.0%; height: 100.0%;">Sunway Putra Hotel Kuala Lumpur, Rating: 8.5, Polarity: 0.5157</div>`)[0];
+                popup_7980a6a7000c44d587b1f6544f1c1254.setContent(html_384646e79c704729b13e204fecc5dfc4);
+            
+
+            circle_marker_6374f91109aa4ef796dd75054f3df079.bindPopup(popup_7980a6a7000c44d587b1f6544f1c1254)
+            ;
+
+            
+        
+    
+            var circle_marker_808353345e15457b92d0e92173151134 = L.circleMarker(
+                [3.0693334, 101.6836492],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_727ce497f17345db97918b0762d82db4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_82d1d9f321dd405ca943640614f2be20 = $(`<div id="html_82d1d9f321dd405ca943640614f2be20" style="width: 100.0%; height: 100.0%;">The Saujana Hotel  Kuala Lumpur, Rating: 7.9, Polarity: 0.4993</div>`)[0];
+                popup_727ce497f17345db97918b0762d82db4.setContent(html_82d1d9f321dd405ca943640614f2be20);
+            
+
+            circle_marker_808353345e15457b92d0e92173151134.bindPopup(popup_727ce497f17345db97918b0762d82db4)
+            ;
+
+            
+        
+    
+            var circle_marker_35838e037f154d5285eff306fbb22da6 = L.circleMarker(
+                [3.1617227, 101.719828],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_ee3fef2666284ba5a2d12661e8a29e0c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dbebf7b072ae49a5856247892b54e12f = $(`<div id="html_dbebf7b072ae49a5856247892b54e12f" style="width: 100.0%; height: 100.0%;">DoubleTree by Hilton Hotel  Kuala Lumpur, Rating: 8.5, Polarity: 0.4904</div>`)[0];
+                popup_ee3fef2666284ba5a2d12661e8a29e0c.setContent(html_dbebf7b072ae49a5856247892b54e12f);
+            
+
+            circle_marker_35838e037f154d5285eff306fbb22da6.bindPopup(popup_ee3fef2666284ba5a2d12661e8a29e0c)
+            ;
+
+            
+        
+    
+            var circle_marker_9c05e31155844a7c9a1362d9315a4180 = L.circleMarker(
+                [3.1440185, 101.70441470241059],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_b6004655fbf243ed82557cf0bf2cdb50 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4aeee6300d7e4733b2a82562959b9b2f = $(`<div id="html_4aeee6300d7e4733b2a82562959b9b2f" style="width: 100.0%; height: 100.0%;">The Robertson Kuala Lumpur, Rating: 8.6, Polarity: 0.4696</div>`)[0];
+                popup_b6004655fbf243ed82557cf0bf2cdb50.setContent(html_4aeee6300d7e4733b2a82562959b9b2f);
+            
+
+            circle_marker_9c05e31155844a7c9a1362d9315a4180.bindPopup(popup_b6004655fbf243ed82557cf0bf2cdb50)
+            ;
+
+            
+        
+    
+            var circle_marker_8c9144a2c27144ceadfaa7062290c9f0 = L.circleMarker(
+                [3.12736145, 101.72401892479988],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_a776dd7709b94faaa08c642f2b726def = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_24a16eaaca124b74970297412e8c1e78 = $(`<div id="html_24a16eaaca124b74970297412e8c1e78" style="width: 100.0%; height: 100.0%;">Sunway Velocity Hotel Kuala Lumpur, Rating: 8.6, Polarity: 0.4240</div>`)[0];
+                popup_a776dd7709b94faaa08c642f2b726def.setContent(html_24a16eaaca124b74970297412e8c1e78);
+            
+
+            circle_marker_8c9144a2c27144ceadfaa7062290c9f0.bindPopup(popup_a776dd7709b94faaa08c642f2b726def)
+            ;
+
+            
+        
+    
+            var circle_marker_eb3414f21d9f45f2ac071fc69b5bb523 = L.circleMarker(
+                [2.5995302999999996, 101.68292064890011],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2d75f11fec2c43f8b3d5d6bc730d5470);
+            
+    
+            var popup_e1a4565be7ca4134878687368ccfd715 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b61571678c594423b0d1b954e3cb503d = $(`<div id="html_b61571678c594423b0d1b954e3cb503d" style="width: 100.0%; height: 100.0%;">Avani Sepang Goldcoast Resort Kuala Lumpur, Rating: 7.5, Polarity: 0.3919</div>`)[0];
+                popup_e1a4565be7ca4134878687368ccfd715.setContent(html_b61571678c594423b0d1b954e3cb503d);
+            
+
+            circle_marker_eb3414f21d9f45f2ac071fc69b5bb523.bindPopup(popup_e1a4565be7ca4134878687368ccfd715)
+            ;
+
+            
+        
+</script>
